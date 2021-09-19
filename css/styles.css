@@ -14,6 +14,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  background-color: var(--third-text-color);
 }
 
 .link {
@@ -118,6 +119,13 @@ body {
 
 /* FEATURES */
 
+.features-item {
+  display: inline-block;
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -134,7 +142,7 @@ body {
 /* WORK */
 
 .work-item {
-  display: inline;
+  display: inline-block;
 }
 
 /* TEAM */
@@ -198,20 +206,22 @@ body {
 
 /* PORTFOLIO MAIN*/
 
-.portfolio-btn:hover,
-.portfolio-btn:focus {
-  color: var(--third-text-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .portfolio-btn {
   background: var(--btn-bg-color);
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   border-radius: 4px;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus,
+.portfolio-btn:active,
+.current-btn {
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects-item {
